@@ -1,0 +1,25 @@
+[package]
+name = "ncservice"
+version = "1.0.0"
+edition = "2021"
+description = "Network Communication Service"
+authors = ["Network Systems Group"]
+license = "MIT"
+
+[dependencies]
+wireguard-netstack = "0.3.0"
+fast-socks5 = "1.0.0"
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_ini = "0.2"
+bytes = "1"
+ipnet = "2"
+base64 = "0.22"
+toml = "0.8"
+
+[build-dependencies]
+embed-resource = "2"
